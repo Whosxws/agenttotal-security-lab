@@ -1,0 +1,160 @@
+[
+  {
+    "id": "M1",
+    "base_sample": "M1",
+    "kind": "mcp",
+    "input_form": "capability_snapshot",
+    "input_sha256": "b986237ee30a5b805c383eebb3dc22e6cc7ca69a284158991abf9ec2e3cece94",
+    "label": "benign",
+    "note": "自制能力文本；M1仅授权目录读取，M2要求额外读取并隐瞒，M3明确拒绝引用反例。仅为静态指令语义标签。"
+  },
+  {
+    "id": "M2",
+    "base_sample": "M2",
+    "kind": "mcp",
+    "input_form": "capability_snapshot",
+    "input_sha256": "b8f6f772cfab6b42e4bdc1e2ccd4bcf8881239a6da2c59affcc0d4a4ff28edbd",
+    "label": "risky",
+    "note": "自制能力文本；M1仅授权目录读取，M2要求额外读取并隐瞒，M3明确拒绝引用反例。仅为静态指令语义标签。"
+  },
+  {
+    "id": "M3",
+    "base_sample": "M3",
+    "kind": "mcp",
+    "input_form": "capability_snapshot",
+    "input_sha256": "4fd7c14b696ddefa7a7bd901e46bfa4911e8c832a8d43633ea2a7d35d5ace65c",
+    "label": "benign",
+    "note": "自制能力文本；M1仅授权目录读取，M2要求额外读取并隐瞒，M3明确拒绝引用反例。仅为静态指令语义标签。"
+  },
+  {
+    "id": "M4",
+    "base_sample": "M4",
+    "kind": "mcp",
+    "input_form": "launch_config",
+    "input_sha256": "e1f48371f573c3cd28b4a2e5e08d20d9c6c0252c8bf4924daf72ef2c9bb6f249",
+    "note": "网站 risky_stdio 示例的原始配置；仅静态检测，禁止启动该配置。"
+  },
+  {
+    "id": "M5",
+    "base_sample": "M5",
+    "kind": "mcp",
+    "input_form": "source_archive",
+    "zip_sha256": "47e4aa93146fb49248727847960c00caafcac343a955f52679b3aff86df10289",
+    "note": "原本地实验源码 ZIP 逐字复制；只做静态检查，不启动 MCP。"
+  },
+  {
+    "id": "M6",
+    "base_sample": "M6",
+    "kind": "mcp",
+    "input_form": "source_archive",
+    "zip_sha256": "bfbee3ff6c359e7a64d92481bd6b4bf30998748c2b048cff6792c64bd7ab8c43",
+    "note": "原本地实验源码 ZIP 逐字复制；只做静态检查，不启动 MCP。"
+  },
+  {
+    "id": "S1",
+    "base_sample": "S1",
+    "kind": "skill",
+    "input_form": "skill_archive",
+    "zip_sha256": "7f0d2844cfaf697da193072548878f9346ec14b98383741b9a2f587702de5105",
+    "label": "benign",
+    "note": "S1仅整理输入，S2要求隐藏额外读取，S3拒绝引用，S4说明与S1字节相同但完整包含未声明输出逻辑；脚本仅静态分析，不主张已证明可达攻击。"
+  },
+  {
+    "id": "S2",
+    "base_sample": "S2",
+    "kind": "skill",
+    "input_form": "skill_archive",
+    "zip_sha256": "c39652b325406216a861327f5e1988330aca699728fe699272f7f4ec94472774",
+    "label": "risky",
+    "note": "S1仅整理输入，S2要求隐藏额外读取，S3拒绝引用，S4说明与S1字节相同但完整包含未声明输出逻辑；脚本仅静态分析，不主张已证明可达攻击。"
+  },
+  {
+    "id": "S3",
+    "base_sample": "S3",
+    "kind": "skill",
+    "input_form": "skill_archive",
+    "zip_sha256": "8d4ad430bbe0d40d0fb47d999378330043036d9402b479841ce96bbfe154af60",
+    "label": "benign",
+    "note": "S1仅整理输入，S2要求隐藏额外读取，S3拒绝引用，S4说明与S1字节相同但完整包含未声明输出逻辑；脚本仅静态分析，不主张已证明可达攻击。"
+  },
+  {
+    "id": "S4-description",
+    "base_sample": "S4",
+    "kind": "skill",
+    "input_form": "skill_archive",
+    "zip_sha256": "7f0d2844cfaf697da193072548878f9346ec14b98383741b9a2f587702de5105",
+    "label": "coverage_gap",
+    "note": "S1仅整理输入，S2要求隐藏额外读取，S3拒绝引用，S4说明与S1字节相同但完整包含未声明输出逻辑；脚本仅静态分析，不主张已证明可达攻击。"
+  },
+  {
+    "id": "S4-package",
+    "base_sample": "S4",
+    "kind": "skill",
+    "input_form": "skill_archive",
+    "zip_sha256": "ec434c2d5fe31c7080d5dc0cecb33fc1a94ec13a9594b69a9f272fbd8fb7f894",
+    "label": "risky",
+    "note": "S1仅整理输入，S2要求隐藏额外读取，S3拒绝引用，S4说明与S1字节相同但完整包含未声明输出逻辑；脚本仅静态分析，不主张已证明可达攻击。"
+  },
+  {
+    "id": "R1",
+    "base_sample": "R1",
+    "kind": "mcp",
+    "input_form": "source_archive",
+    "zip_sha256": "4fdaa49b786042da4425a5fcabc8c77e18b4b7bd7efa1c03106dcc09d31bc42d",
+    "source": {
+      "repo": "upstash/context7",
+      "commit": "b250c2515694eee4b6df4db82fa056df9ed3e306",
+      "git_tree": "73fd55d072cb2c6701422d4485acd9a41060a977",
+      "commit_url": "https://github.com/upstash/context7/commit/b250c2515694eee4b6df4db82fa056df9ed3e306",
+      "archive_api": "https://api.github.com/repos/upstash/context7/zipball/b250c2515694eee4b6df4db82fa056df9ed3e306",
+      "retrieved_at": "2026-09-22T07:01:02.793530+00:00"
+    },
+    "note": "GitHub 固定提交完整 ZIP，保持服务器返回内容不变；只读取压缩包校验，未执行项目。"
+  },
+  {
+    "id": "R2",
+    "base_sample": "R2",
+    "kind": "mcp",
+    "input_form": "source_archive",
+    "zip_sha256": "cd4a665a8eef7c0a802c441930694ff480a71cb8f1901d141a7f884dbe166cac",
+    "source": {
+      "repo": "microsoft/playwright-mcp",
+      "commit": "55679f5f3d4b4f3e2534ec0ce2fc5683ba2eaf3f",
+      "git_tree": "d870c677c26220caf7cab9ec02ee0c9786d614d2",
+      "commit_url": "https://github.com/microsoft/playwright-mcp/commit/55679f5f3d4b4f3e2534ec0ce2fc5683ba2eaf3f",
+      "archive_api": "https://api.github.com/repos/microsoft/playwright-mcp/zipball/55679f5f3d4b4f3e2534ec0ce2fc5683ba2eaf3f",
+      "retrieved_at": "2026-09-22T07:01:02.861569+00:00"
+    },
+    "note": "GitHub 固定提交完整 ZIP，保持服务器返回内容不变；只读取压缩包校验，未执行项目。"
+  },
+  {
+    "id": "R3",
+    "base_sample": "R3",
+    "kind": "skill",
+    "input_form": "skill_archive",
+    "zip_sha256": "1e9c22f2df1d35bb8618354adb9791f422628aa85ac761c25b553d14afe020fa",
+    "source": {
+      "public_repo": "openclaw/openclaw",
+      "repo_subpath": "skills/nano-pdf",
+      "material_identical_at_commit": "decbd611a0928625af9d3d6ea7325ed49da17347",
+      "historical_tree_match": true,
+      "identity_note": "Exact tree digest match to historical report; does not prove historical fetch came from this commit."
+    },
+    "note": "与历史树哈希吻合的原始 Skill 文件打包；ZIP 内无新增说明或辅助脚本。"
+  },
+  {
+    "id": "R4",
+    "base_sample": "R4",
+    "kind": "skill",
+    "input_form": "skill_archive",
+    "zip_sha256": "a7d12e2d80fbd1c5858bbe75164bf5fda5daf5ad0c44382ee07c092b90ab8406",
+    "source": {
+      "public_repo": "openclaw/openclaw",
+      "repo_subpath": ".agents/skills/openclaw-test-heap-leaks",
+      "material_identical_at_commit": "c70aee247e831d21895f5ea3dda7497c50af0721",
+      "historical_tree_match": true,
+      "identity_note": "Exact tree digest match to historical report; does not prove historical fetch came from this commit."
+    },
+    "note": "与历史树哈希吻合的原始 Skill 文件打包；ZIP 内无新增说明或辅助脚本。"
+  }
+]

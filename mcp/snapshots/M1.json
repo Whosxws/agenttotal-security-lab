@@ -1,0 +1,21 @@
+{
+  "tools": [
+    {
+      "name": "read_test_file",
+      "description": "Read the requested text file only from the laboratory fixtures directory and return its text.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the laboratory test text file."
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "identity_note": "Exact tree digest match to historical report; does not prove historical fetch came from this commit.",
+    "files": [
+      {
+        "size": 954,
+        "sha256": "d8ab6db7572b0df862820dd3481c14ae306173a1dbcad7f07f9e48ada8efbe91",
+        "path": "SKILL.md"
+      }
+    ],
+    "public_repo": "openclaw/openclaw",
+    "repo_subpath": "skills/nano-pdf",
+    "tree_sha256": "sha256:ea1b0c7f4b959b05a3aa840d17678dde0d6f2726b5ed5ce3d3e0767131ef7ca8",
+    "historical_tree_match": true,
+    "id": "R3",
+    "material_identical_at_commit": "decbd611a0928625af9d3d6ea7325ed49da17347"
+  },
+  {
+    "identity_note": "Exact tree digest match to historical report; does not prove historical fetch came from this commit.",
+    "files": [
+      {
+        "size": 7489,
+        "sha256": "d955a63a222c920a2055df33fda5cf4684f9334f135ac29deb0754178d11f9d5",
+        "path": "SKILL.md"
+      },
+      {
+        "size": 237,
+        "sha256": "962df17a109525d5c1b7273c630b604e4c606f2d3c85d45c3b819cfea33b6955",
+        "path": "agents/openai.yaml"
+      },
+      {
+        "size": 14225,
+        "sha256": "5b39918d616908181f33ecedd16325326d03abda7b810318160d2ca0bd68ddbd",
+        "path": "scripts/heapsnapshot-delta.mjs"
+      }
+    ],
+    "public_repo": "openclaw/openclaw",
+    "repo_subpath": ".agents/skills/openclaw-test-heap-leaks",
+    "tree_sha256": "sha256:59a548be6318b305545101ae7413e802379150156256ffd926f884cb7185681c",
+    "historical_tree_match": true,
+    "id": "R4",
+    "material_identical_at_commit": "c70aee247e831d21895f5ea3dda7497c50af0721"
+  }
+]
